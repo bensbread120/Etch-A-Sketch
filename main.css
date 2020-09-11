@@ -51,7 +51,8 @@ Etch-A-Sketch panel
 */
 #container {
     width: 960px;
-    margin: 0 auto;
+    margin: 20px auto;
+    border: 5px solid black;
 }
 body {
     line-height: 0;

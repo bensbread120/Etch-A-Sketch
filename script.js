@@ -1,3 +1,7 @@
+function randomGen() {
+    return Math.floor((Math.random() * 255) + 1);
+}
+
 
 function divCreator(rows, cols) {
     for (let i = 0;i<rows;i++) {
@@ -12,7 +16,7 @@ function divCreator(rows, cols) {
             div.style.cssText = `width: ${width}px; height: ${height}px; display: inline-block; background: grey;`;
             //add listener to get drawing effect when mouse is hovering over div
             div.addEventListener('mouseenter', () => {
-                div.style.background = 'blue';
+                div.style.background = `rgb(${randomGen()}, ${randomGen()}, ${randomGen()})`;
             });
             
             container.appendChild(div);
